@@ -1,0 +1,1307 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "wheaton",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "what can you do to help me",
+            "what can it do to help me",
+            "what you can do to help me",
+            "what it can do to help me",
+            "what can you do to help",
+            "what can it do to help",
+            "what you can do to help",
+            "what it can do to help",
+            "what can you help with",
+            "what can it help with",
+            "what you can help with",
+            "what it can help with",
+            "how you can help me",
+            "how it can help me",
+            "can you help me",
+            "can it help me",
+            "how you can help",
+            "how it can help",
+            "can you help",
+            "can it help",
+            "if it can help",
+            "it to help",
+            "help",
+            "what can you tell me about",
+            "what can it tell me about",
+            "what you can tell me about",
+            "what it can tell me about",
+            "what can you tell me",
+            "what can it tell me",
+            "what you can tell me",
+            "what it can tell me",
+            "what can you say",
+            "what can it say",
+            "what you can say",
+            "what it can say",
+            "what do you know",
+            "what does it know",
+            "what you know",
+            "what it knows",
+            "which questions can I ask you",
+            "which questions can I ask it",
+            "which questions I can ask you",
+            "which questions I can ask it",
+            "which questions can I ask",
+            "which questions I can ask",
+            "what questions can I ask you",
+            "what questions can I ask it",
+            "what questions I can ask you",
+            "what questions I can ask it",
+            "what questions can I ask",
+            "what questions I can ask",
+            "which questions do I ask you",
+            "which questions do I ask it",
+            "which questions do I ask",
+            "what questions do I ask you",
+            "what questions do I ask it",
+            "what questions do I ask",
+            "which questions can you answer",
+            "which questions can it answer",
+            "which questions you can answer",
+            "which questions it can answer",
+            "what questions can you answer",
+            "what questions can it answer",
+            "what questions you can answer",
+            "what questions it can answer",
+            "what can you answer",
+            "what can it answer",
+            "what you can answer",
+            "what it can answer",
+            "what can I ask it",
+            "what I can ask you",
+            "what I can ask it",
+            "what can I ask",
+            "what I can ask",
+            "what do I ask you",
+            "what do I ask it",
+            "what do I ask",
+            "what can you do",
+            "what can it do",
+            "what you can do",
+            "what it can do"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop"
+          ]
+        },
+        {
+          "name": "unknown",
+          "slots": [
+            {
+              "name": "wildcard",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "{wildcard} the",
+            "how {wildcard}",
+            "what {wildcard}",
+            "why {wildcard}",
+            "can {wildcard}",
+            "to {wildcard}",
+            "how",
+            "what",
+            "why",
+            "can",
+            "to"
+          ]
+        },
+        {
+          "name": "unknown_person",
+          "slots": [
+            {
+              "name": "wildcard",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "who {wildcard}",
+            "who"
+          ]
+        },
+        {
+          "name": "unknown_location",
+          "slots": [
+            {
+              "name": "wildcard",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "where {wildcard}",
+            "where"
+          ]
+        },
+        {
+          "name": "unknown_event",
+          "slots": [
+            {
+              "name": "wildcard",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "when {wildcard}",
+            "when"
+          ]
+        },
+        {
+          "name": "person",
+          "slots": [
+            {
+              "name": "person_name",
+              "type": "people"
+            }
+          ],
+          "samples": [
+            "what do you know about {person_name}",
+            "what it knows about {person_name}",
+            "what you know about {person_name}",
+            "what does it know about {person_name}",
+            "who is {person_name} of wheaton college",
+            "who {person_name} of wheaton college is",
+            "who is {person_name} at wheaton college",
+            "who {person_name} at wheaton college is",
+            "who is wheaton college's {person_name}",
+            "who wheaton college's {person_name} is",
+            "who is {person_name} of wheaton",
+            "who {person_name} of wheaton is",
+            "who is {person_name} at wheaton",
+            "who {person_name} at wheaton is",
+            "who is wheaton's {person_name}",
+            "who wheaton's {person_name} is",
+            "who is {person_name}",
+            "who {person_name} is",
+            "where is {person_name} of wheaton college",
+            "where {person_name} of wheaton college is",
+            "where is {person_name} at wheaton college",
+            "where {person_name} at wheaton college is",
+            "where is wheaton college's {person_name}",
+            "where wheaton college's {person_name} is",
+            "where is {person_name} of wheaton",
+            "where {person_name} of wheaton is",
+            "where is the {person_name} at wheaton",
+            "where {person_name} at wheaton is",
+            "where is wheaton's {person_name}",
+            "where wheaton's {person_name} is",
+            "where is {person_name}",
+            "where {person_name} is",
+            "what is {person_name} email address",
+            "what {person_name} email address is",
+            "what is {person_name} email",
+            "what {person_name} email is",
+            "what is {person_name} phone number",
+            "what {person_name} phone number is",
+            "what is {person_name} number",
+            "what {person_name} number is",
+            "what are {person_name} office hours",
+            "what {person_name} office office hours are",
+            "what is {person_name} office",
+            "what {person_name} office is",
+            "where is {person_name} office",
+            "where {person_name} office is",
+            "what is {person_name} address",
+            "what {person_name} address is",
+            "how can i contant {person_name}",
+            "how i can contact {person_name}",
+            "how do i contact {person_name}",
+            "how to contact {person_name}"
+          ]
+        },
+        {
+          "name": "service",
+          "slots": [
+            {
+              "name": "service_name",
+              "type": "services"
+            }
+          ],
+          "samples": [
+            "what do you know about {service_name}",
+            "what it knows about {service_name}",
+            "what you know about {service_name}",
+            "what does it know about {service_name}",
+            "who is in charge of {service_name}",
+            "who runs {service_name}",
+            "what are the times for {service_name}",
+            "what the times are for {service_name}",
+            "where can I find {service_name}",
+            "where I can find {service_name}",
+            "where do I find {service_name}",
+            "where is {service_name}",
+            "where {service_name} is",
+            "when are the times for {service_name}",
+            "when the times are for {service_name}",
+            "when are the hours for {service_name}",
+            "when the hours are for {service_name}",
+            "when does {service_name} start",
+            "when {service_name} starts",
+            "when does {service_name} end",
+            "when {service_name} ends",
+            "when is {service_name}",
+            "when {service_name} is",
+            "is there {service_name}",
+            "is {service_name} available",
+            "is {service_name} offered",
+            "if there is {service_name}",
+            "if there is {service_name} available",
+            "if {service_name} is available",
+            "if there is {service_name} offered",
+            "if {service_name} is offered",
+            "tell me about {service_name}",
+            "to tell me about {service_name}",
+            "about {service_name}"
+          ]
+        },
+        {
+          "name": "place",
+          "slots": [
+            {
+              "name": "place_name",
+              "type": "places"
+            }
+          ],
+          "samples": [
+            "what do you know about {place_name}",
+            "what it knows about {place_name}",
+            "what you know about {place_name}",
+            "what does it know about {place_name}",
+            "who is in charge of {place_name}",
+            "who runs {place_name}",
+            "what are the times for {place_name}",
+            "what the times are for {place_name}",
+            "where can I find {place_name}",
+            "where I can find {place_name}",
+            "where do I find {place_name}",
+            "where is {place_name}",
+            "where {place_name} is",
+            "when are the times for {place_name}",
+            "when the times are for {place_name}",
+            "when are the hours for {place_name}",
+            "when the hours are for {place_name}",
+            "when does {place_name} start",
+            "when {place_name} starts",
+            "when does {place_name} end",
+            "when {place_name} ends",
+            "when is {place_name}",
+            "when {place_name} is",
+            "is there {place_name}",
+            "is {place_name} available",
+            "is {place_name} offered",
+            "if there is {place_name}",
+            "if there is {place_name} available",
+            "if {place_name} is available",
+            "if there is {place_name} offered",
+            "if {place_name} is offered",
+            "tell me about {place_name}",
+            "to tell me about {place_name}",
+            "about {place_name}"
+          ]
+        },
+        {
+          "name": "date",
+          "slots": [
+            {
+              "name": "date_name",
+              "type": "dates"
+            }
+          ],
+          "samples": [
+            "what do you know about {date_name}",
+            "what you know about {date_name}",
+            "what it knows about {date_name}",
+            "what does it know about {date_name}",
+            "what is {date_name}",
+            "what {date_name} is",
+            "when is {date_name} starting",
+            "when {date_name} is starting",
+            "when is {date_name} ending",
+            "when {date_name} is ending",
+            "when does {date_name} start",
+            "when {date_name} starts",
+            "when does {date_name} end",
+            "when {date_name} ends",
+            "when is {date_name}",
+            "when {date_name} is"
+          ]
+        },
+        {
+          "name": "event",
+          "slots": [
+            {
+              "name": "event_name",
+              "type": "events"
+            }
+          ],
+          "samples": [
+            "what do you know about {event_name}",
+            "what you know about {event_name}",
+            "what it knows about {event_name}",
+            "what does it know about {event_name}",
+            "what is {event_name}",
+            "what {event_name} is",
+            "where is {event_name}",
+            "where the {event_name} is",
+            "when is the {event_name}",
+            "when the {event_name} is"
+          ]
+        },
+        {
+          "name": "list",
+          "slots": [
+            {
+              "name": "list_name",
+              "type": "lists"
+            }
+          ],
+          "samples": [
+            "what do you know about {list_name}",
+            "what you know about {list_name}",
+            "what it knows about {list_name}",
+            "what does it know about {list_name}",
+            "what {list_name} do you know",
+            "what {list_name} does it know",
+            "what {list_name} you know",
+            "what {list_name} it knows",
+            "what {list_name} are there",
+            "what {list_name} is there",
+            "which {list_name} do you know",
+            "which {list_name} does it know",
+            "which {list_name} you know",
+            "which {list_name} it knows",
+            "which {list_name} are there",
+            "which {list_name} is there",
+            "what are the upcoming {list_name}",
+            "what the upcoming {list_name} are",
+            "what are the {list_name}",
+            "what the {list_name} are",
+            "which {list_name} are there",
+            "tell me what {list_name} you know",
+            "to tell me what {list_name} you know",
+            "to tell me what {list_name} it knows",
+            "tell me the {list_name} you know",
+            "to tell me the {list_name} you know",
+            "to tell me the {list_name} it knows",
+            "tell me {list_name} you know",
+            "to tell me {list_name} you know",
+            "to tell me {list_name} it knows",
+            "list the {list_name} you know",
+            "to list the {list_name} you know",
+            "to list the {list_name} it knows",
+            "list {list_name} you know",
+            "to list {list_name} you know",
+            "to list {list_name} it knows",
+            "list the {list_name}",
+            "list {list_name}"
+          ]
+        },
+        {
+          "name": "about_wheaton",
+          "slots": [],
+          "samples": [
+            "what do you know about the history of wheaton",
+            "what you know about the history of wheaton",
+            "what it knows about the history of wheaton",
+            "what does it know about the history of wheaton",
+            "what do you know about wheaton's history",
+            "what you know about wheaton's history",
+            "what it knows about wheaton's history",
+            "what does it know about wheaton's history",
+            "what do you know about wheaton",
+            "what you know about wheaton",
+            "what it knows about wheaton",
+            "what does it know about wheaton",
+            "what the history of wheaton is",
+            "what the history of the college is",
+            "what the college's history is",
+            "what is wheaton's history",
+            "what is the history of wheaton",
+            "about wheaton college",
+            "tell me about the college",
+            "what is wheaton college",
+            "what is wheaton",
+            "about wheaton",
+            "tell me about wheaton"
+          ]
+        },
+        {
+          "name": "student_population",
+          "slots": [],
+          "samples": [
+            "what do you know about population",
+            "what you know about population",
+            "what it knows about population",
+            "what does it know about population",
+            "what do you know about student population",
+            "what you know about student population",
+            "what it knows about student population",
+            "what does it know about student population",
+            "population count",
+            "student count",
+            "number of students",
+            "population",
+            "what is the number of students attending",
+            "how many people attend",
+            "what the college population is",
+            "how many students attend",
+            "what the student population is",
+            "how many students go to wheaton",
+            "how many people attend wheaton",
+            "what is the college's population",
+            "how many students attend wheaton",
+            "what is the student population",
+            "what is the population of wheaton"
+          ]
+        },
+        {
+          "name": "majors_and_minors",
+          "slots": [],
+          "samples": [
+            "what do you know about majors",
+            "what you know about majors",
+            "what it knows about majors",
+            "what does it know about majors",
+            "what do you know about minors",
+            "what you know about minors",
+            "what it knows about minors",
+            "what does it know about minors",
+            "what do you know about majors and minors",
+            "what you know about majors and minors",
+            "what it knows about majors and minors",
+            "what does it know about majors and minors",
+            "what do you know about class offerings",
+            "what you know about class offerings",
+            "what it knows about class offerings",
+            "what does it know about class offerings",
+            "what are the minors offered",
+            "what are the majors offered",
+            "what are the majors and minors offered",
+            "what are the majors and minors",
+            "what are the minors",
+            "what are the majors",
+            "what are the class offerings",
+            "what classes are there",
+            "which classes are offered",
+            "what classes are offered",
+            "how many minors are offered",
+            "how many minors are there",
+            "which minors are there",
+            "which minors does wheaton have",
+            "which minors are offered",
+            "what minors are offered",
+            "how many majors are offered",
+            "how many majors and minors are offered",
+            "how many majors are there",
+            "which majors  are there",
+            "which majors does wheaton have",
+            "which majors are offered",
+            "what majors are offered",
+            "what majors does wheaton offer",
+            "how many majors and minors are there",
+            "which majors and minors are there",
+            "which majors and minors does wheaton have",
+            "which majors and minors are offered",
+            "which majors and minors does wheaton offer",
+            "what majors and minors are offered",
+            "what majors and minors does wheaton offer"
+          ]
+        },
+        {
+          "name": "honor_code",
+          "slots": [],
+          "samples": [
+            "what do you know about the wheaton honor code",
+            "what you know about the wheaton honor code",
+            "what it knows about the wheaton honor code",
+            "what does it know about the wheaton honor code",
+            "what do you know about the honor code",
+            "what you know about the honor code",
+            "what it knows about the honor code",
+            "what does it know about the honor code",
+            "what is the wheaton honor code",
+            "what the wheaton honor code is",
+            "what is the honor code",
+            "what the honor code is"
+          ]
+        },
+        {
+          "name": "local_activities",
+          "slots": [],
+          "samples": [
+            "what do you know about activities",
+            "what you know about activities",
+            "what it knows about activities",
+            "what does it know about activities",
+            "what do you know about entertainment",
+            "what you know about entertainment",
+            "what it knows about entertainment",
+            "what does it know about entertainment",
+            "what do you know about local attractions",
+            "what you know about local attractions",
+            "what it knows about local attractions",
+            "what does it know about local attractions",
+            "what do you know about local activities",
+            "what you know about local activities",
+            "what it knows about local activities",
+            "what does it know about local activities",
+            "what do you know about local entertainment",
+            "what you know about local entertainment",
+            "what it knows about local entertainment",
+            "what does it know about local entertainment",
+            "what is there to do around here",
+            "what is there to do in norton",
+            "where can i find activities",
+            "where can i find things to do",
+            "what is there to do for entertainment",
+            "what can i do for entertainment",
+            "what is there to do",
+            "to suggest things to do",
+            "suggest things to do",
+            "tell me things to do",
+            "tell me activities",
+            "to tell me activities",
+            "to list activities",
+            "what are activities"
+          ]
+        },
+        {
+          "name": "dining",
+          "slots": [],
+          "samples": [
+            "what do you know about eating",
+            "what you know about eating",
+            "what it knows about eating",
+            "what does it know about eating",
+            "what do you know about dining",
+            "what you know about dining",
+            "what it knows about dining",
+            "what does it know about dining",
+            "what do you know about food",
+            "what you know about food",
+            "what it knows about food",
+            "what does it know about food",
+            "what do you know about restaurants",
+            "what you know about restaurants",
+            "what it knows about restaurants",
+            "what does it know about restaurants",
+            "what do you know about diners",
+            "what you know about diners",
+            "what it knows about diners",
+            "what does it know about diners",
+            "about eating",
+            "about food",
+            "about dining",
+            "where is food served",
+            "where do I eat",
+            "where is the restaurant",
+            "where is the diner",
+            "is there a restaurant",
+            "how can I eat",
+            "where can I get food",
+            "where is chase"
+          ]
+        },
+        {
+          "name": "gatra",
+          "slots": [],
+          "samples": [
+            "what do you know about gatra",
+            "what you know about gatra",
+            "what it knows about gatra",
+            "what does it know about gatra",
+            "what gatra's stops are",
+            "what the gatra stops are",
+            "what are the gatra stops",
+            "what are gatra's stops",
+            "where can i go with gatra",
+            "where the gatra routes go",
+            "where gatra goes",
+            "where i can go on gatra",
+            "where does gatra go",
+            "where do the gatra routes go",
+            "what is the gatra bus",
+            "what are the gatra routes",
+            "where is gatra",
+            "what is gatra"
+          ]
+        },
+        {
+          "name": "mail",
+          "slots": [],
+          "samples": [
+            "what do you know about mail",
+            "what you know about mail",
+            "what it knows about mail",
+            "what does it know about mail",
+            "what do you know about the mail center",
+            "what you know about the mail center",
+            "what it knows about the mail center",
+            "what does it know about the mail center",
+            "what do you know about the post office",
+            "what you know about the post office",
+            "what it knows about the post office",
+            "what does it know about the post office",
+            "where the mail center is",
+            "where is the mail center",
+            "where the mail room is",
+            "where is the mail room",
+            "how can i get to the post office",
+            "how do i get to the post office",
+            "where the post office is",
+            "where is the post office",
+            "where can i recieve mail",
+            "where can i get mail",
+            "where can i send mail",
+            "where i can send mail",
+            "where i can recieve mail",
+            "where i can get mail",
+            "where my mail is",
+            "where the mail is",
+            "where is the mail",
+            "where is my mail",
+            "where do i go to get mail"
+          ]
+        },
+        {
+          "name": "power_outages",
+          "slots": [],
+          "samples": [
+            "what do you know about power outages",
+            "what you know about power outages",
+            "what it knows about power outages",
+            "what does it know about power outages",
+            "why do we have so many power outages",
+            "why do we lose power so much",
+            "why are there so many power outages",
+            "why does the power go out so often"
+          ]
+        },
+        {
+          "name": "hard_water",
+          "slots": [],
+          "samples": [
+            "what do you know about the water",
+            "what you know about the water",
+            "what it knows about the water",
+            "what does it know about the water",
+            "what do you know about the hard water",
+            "what you know about the hard water",
+            "what it knows about the hard water",
+            "what does it know about the hard water",
+            "what do you know about hard water",
+            "what you know about hard water",
+            "what it knows about hard water",
+            "what does it know about hard water",
+            "what do you know about the rusty water",
+            "what you know about the rusty water",
+            "what it knows about the rusty water",
+            "what does it know about the rusty water",
+            "what do you know about rusty water",
+            "what you know about rusty water",
+            "what it knows about rusty water",
+            "what does it know about rusty water",
+            "what is wrong with the water",
+            "why is the water so bad",
+            "why is the water brown",
+            "why is the water rusty"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "people",
+          "values": [
+            {
+              "name": {
+                "value": "dennis hanno",
+                "synonyms": [
+                  "dennis",
+                  "hanno",
+                  "the president",
+                  "president",
+                  "president hanno"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "renee white",
+                "synonyms": [
+                  "renee",
+                  "white",
+                  "the provost",
+                  "provost",
+                  "provost white"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "grant gosselin",
+                "synonyms": [
+                  "grant",
+                  "gosselin",
+                  "the dean of admission",
+                  "dean of admission",
+                  "dean gosselin"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "kate mccaffrey",
+                "synonyms": [
+                  "kate",
+                  "mccaffrey",
+                  "the dean of students",
+                  "dean of students",
+                  "the dean",
+                  "dean",
+                  "dean mccaffrey"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sally buckley",
+                "synonyms": [
+                  "sally",
+                  "buckley",
+                  "the registrar",
+                  "registrar",
+                  "registrar buckley"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "ed burnett",
+                "synonyms": [
+                  "ed",
+                  "burnett",
+                  "the director of residential life",
+                  "the director of res life",
+                  "director of residential life",
+                  "director of res life",
+                  "the head of residential life",
+                  "the head of res life",
+                  "head of residential life",
+                  "head of res life",
+                  "director of residential life burnett",
+                  "director of res life burnett",
+                  "head of residential life burnett",
+                  "head of res life burnett"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "services",
+          "values": [
+            {
+              "name": {
+                "value": "tutoring",
+                "synonyms": [
+                  "the tutor",
+                  "tutor",
+                  "academic assistance",
+                  "studying assistance",
+                  "academic help",
+                  "studying help"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "counseling",
+                "synonyms": [
+                  "the psychologist",
+                  "psychologist",
+                  "the counselor",
+                  "counselor",
+                  "academic help",
+                  "studying help"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "registrar",
+                "synonyms": [
+                  "the registrar",
+                  "registrar",
+                  "transcript help",
+                  "certification help",
+                  "student record help",
+                  "records help",
+                  "record help"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "admission",
+                "synonyms": [
+                  "the admissions office",
+                  "the admission office",
+                  "admissions office",
+                  "admission office",
+                  "admissions help",
+                  "admission help",
+                  "admissions",
+                  "admission"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "residential life",
+                "synonyms": [
+                  "the residential life office",
+                  "the res life office",
+                  "residential life office",
+                  "res life office",
+                  "residential life help",
+                  "res life help",
+                  "residential life",
+                  "res life"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "student financial services",
+                "synonyms": [
+                  "the student financial services office",
+                  "the financial services office",
+                  "student financial services",
+                  "financial services",
+                  "financial help",
+                  "finance help"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "career services",
+                "synonyms": [
+                  "the student career services office",
+                  "the career services office",
+                  "student career services",
+                  "career services",
+                  "career help"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "media services",
+                "synonyms": [
+                  "the media services office",
+                  "media services",
+                  "media help",
+                  "audio help",
+                  "visual help"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "places",
+          "values": [
+            {
+              "name": {
+                "value": "wallace library",
+                "synonyms": [
+                  "the wallace library",
+                  "the library"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "balfour hood center",
+                "synonyms": [
+                  "the balfour hood center",
+                  "balfour hood",
+                  "balfour"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "chase dining hall",
+                "synonyms": [
+                  "the chase dining hall",
+                  "chase dining",
+                  "chase"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "emerson dining hall",
+                "synonyms": [
+                  "the emerson dining hall",
+                  "emerson dining",
+                  "emerson"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "cole memorial chapel",
+                "synonyms": [
+                  "the cole memorial chapel",
+                  "the chapel"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dimple",
+                "synonyms": [
+                  "the dimple"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "mars science center",
+                "synonyms": [
+                  "the mars science center",
+                  "mars science",
+                  "mars center"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "old science center",
+                "synonyms": [
+                  "the old science center",
+                  "the science center",
+                  "science center"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "kollett hall",
+                "synonyms": [
+                  "kollett"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "watson fine arts",
+                "synonyms": [
+                  "watson arts",
+                  "watson"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "mars arts and humanities",
+                "synonyms": [
+                  "mars arts",
+                  "mars humanities"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "haas athletic center",
+                "synonyms": [
+                  "the haas athletic center",
+                  "the athletic center",
+                  "the haas center",
+                  "haas"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dolls house",
+                "synonyms": [
+                  "the dolls house"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "office of admission",
+                "synonyms": [
+                  "the office of admissions",
+                  "the office of admission",
+                  "office of admissions",
+                  "admissions",
+                  "asmission"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "knapton hall",
+                "synonyms": [
+                  "knapton"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "mary lyon hall",
+                "synonyms": [
+                  "mary lyon"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "park hall"
+              }
+            },
+            {
+              "name": {
+                "value": "hebe hall",
+                "synonyms": [
+                  "hebe"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "makerspace",
+                "synonyms": [
+                  "the makerspace"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "dates",
+          "values": [
+            {
+              "name": {
+                "value": "semester start dates",
+                "synonyms": [
+                  "the semester start",
+                  "semester start",
+                  "fall semester start",
+                  "spring semester start",
+                  "the start of the semester",
+                  "the semester finish",
+                  "the semester start",
+                  "when college lets out",
+                  "college let out",
+                  "when college finishes",
+                  "college finish",
+                  "college end",
+                  "when school lets out",
+                  "school let out",
+                  "when school finishes",
+                  "school finish",
+                  "school end"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "semester end dates",
+                "synonyms": [
+                  "the semester end",
+                  "semester end",
+                  "fall semester end",
+                  "spring semester end",
+                  "the end of the semester",
+                  "the semester finish",
+                  "the semester end",
+                  "when college lets out",
+                  "college let out",
+                  "when college finishes",
+                  "college finish",
+                  "college end",
+                  "when school lets out",
+                  "school let out",
+                  "when school finishes",
+                  "school finish",
+                  "school end"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "october break",
+                "synonyms": [
+                  "october vacation",
+                  "fall vacation",
+                  "fall break"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "thanksgiving break",
+                "synonyms": [
+                  "thanksgiving vacation",
+                  "thanksgiving",
+                  "turkey day"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "winter break",
+                "synonyms": [
+                  "winter vacation",
+                  "christmas"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "spring break",
+                "synonyms": [
+                  "spring vacation"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "summer break",
+                "synonyms": [
+                  "summer vacation"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "events",
+          "values": [
+            {
+              "name": {
+                "value": "pancake breakfast",
+                "synonyms": [
+                  "the pancake breakfast"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "advising week"
+              }
+            },
+            {
+              "name": {
+                "value": "food street"
+              }
+            }
+          ]
+        },
+        {
+          "name": "lists",
+          "values": [
+            {
+              "name": {
+                "value": "faculty",
+                "synonyms": [
+                  "people",
+                  "humans"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "services",
+                "synonyms": [
+                  "student services"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "locations",
+                "synonyms": [
+                  "places",
+                  "buildings",
+                  "restaurants",
+                  "diners",
+                  "eateries"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dates",
+                "synonyms": [
+                  "vacations",
+                  "breaks"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "events",
+                "synonyms": [
+                  "current events",
+                  "ongoing events",
+                  "student events",
+                  "campus events",
+                  "campus-wide events"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "general information",
+                "synonyms": [
+                  "miscellaneous information",
+                  "miscellaneous facts",
+                  "wheaton information",
+                  "wheaton facts",
+                  "information",
+                  "facts"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "banter",
+                "synonyms": [
+                  "jokes",
+                  "ruses",
+                  "laughs",
+                  "laffs",
+                  "gaffs"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
